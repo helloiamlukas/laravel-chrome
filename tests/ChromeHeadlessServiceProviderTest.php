@@ -2,9 +2,9 @@
 
 namespace ChromeHeadless\Test;
 
+use Orchestra\Testbench\TestCase;
 use ChromeHeadless\ChromeHeadless;
 use ChromeHeadless\Laravel\ChromeHeadlessServiceProvider;
-use Orchestra\Testbench\TestCase;
 
 class ChromeHeadlessServiceProviderTest extends TestCase
 {
