@@ -1,0 +1,45 @@
+{
+    "name": "helloiamlukas/laravel-chrome",
+    "description": "A Laravel Wrapper for Chrome Headless. Get the DOM of any webpage.",
+    "homepage": "https://github.com/helloiamlukas/laravel-chrome",
+    "keywords":
+    [
+        "laravel",
+        "webpage",
+        "dom",
+        "chrome",
+        "headless"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.1",
+        "helloiamlukas/chrome-php": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "^6.1|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChromeHeadless\\Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChromeHeadless\\Laravel\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChromeHeadless\\Laravel\\ChromeHeadlessServiceProvider"
+            ]
+        }
+    }
+}
