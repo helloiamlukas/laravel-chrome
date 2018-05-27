@@ -27,6 +27,9 @@ class ChromeHeadlessServiceProvider extends ServiceProvider
         $this->app->resolving(ChromeHeadless::class, function (ChromeHeadless $chrome) {
             return $chrome->setChromePath($this->app->config->get('chrome.exec_path'))
                 ->setUserAgent($this->app->config->get('chrome.user_agent'))
+                ->setBlacklist($this->app->config->get('chrome.blacklist'))
+                ->setHeaders($this->app->config->get('chrome.headers'))
+                ->setViewport($this->app->config->get('chrome.viewport'))
                 ->setTimeout($this->app->config->get('chrome.timeout'));
         });
     }
