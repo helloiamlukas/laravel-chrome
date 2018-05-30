@@ -143,7 +143,7 @@ You can specify custom headers which will be used for the request.
 |
 */
 'headers' => [
-				'DNT' => 1 // DO NOT TRACK
+                'DNT' => 1 // DO NOT TRACK
              ],
 ```
 
