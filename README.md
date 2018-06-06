@@ -34,11 +34,11 @@ To publish the configuration file, you need to run:
 php artisan vendor:publish --provider="ChromeHeadless\ChromeHeadlessServiceProvider"
 ```
 
-This will create a config file at `config/schema-crawler.php`.
+This will create a config file at `config/chrome.php`.
 
 ## Configuration
 
-The configuration can be found at `config/schema-crawler.php`.
+The configuration can be found at `config/chrome.php`.
 
 ### Custom Chrome Path
 
